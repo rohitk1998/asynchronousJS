@@ -5,7 +5,7 @@ function landingpage() {
   return <div class="container-fluid p-3 bg-light">
       <div className="row">
           <div className="col-sm-4 d-flex justify-content-center">
-            <p>asynchronousJS</p>
+            <h5>asynchronousJS</h5>
           </div>
           <div className="col-sm-6">
             <div className="container">
