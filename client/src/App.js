@@ -1,10 +1,27 @@
+import { Route } from 'react-router-dom';
 import './App.css';
+import {mainRoute} from "./app_routes/mainroute"
 
 function App() {
   return (
-    <div class="container">
-    ydryfydfyf
-          </div>
+    <>
+    {mainRoute.map((route, index) => {
+       return (
+        <Route
+        key={index}
+        path={route.path}
+        exact={route.exact}
+        render={(props) => {
+          return(
+            <route.layout>
+              <route.component {...props} />
+            </route.layout>
+          )
+        }}
+      />
+       )
+     })}
+    </>
   );
 }
 
