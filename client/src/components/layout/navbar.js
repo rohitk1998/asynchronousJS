@@ -28,7 +28,7 @@ function Navbar(props) {
             <div>
               <button
                 type="button"
-                class="btn btn-outline-dark"
+                className="btn btn-outline-dark"
                 style={{ width: "120px" }}
               >
                 Sign In
