@@ -1,16 +1,28 @@
 import React from "react";
 import Navbar from "./navbar";
+import MenuBar from "./fullbar";
 
+const Layout = ({ children }) => {
+  const [showmenu, setShowMenu] = React.useState(false);
 
+  const showFullBar = () => {
+    setShowMenu(!showmenu);
+  };
 
-const Layout = ({children}) => {
-
-    return (
+  return (
+    <>
+      {showmenu ? (
         <div>
-            <Navbar/>
-            {children}
+          <MenuBar showMenuCallbackFunc={showFullBar} />
         </div>
-    )
-}
+      ) : (
+        <div>
+          <Navbar showMenuCallbackFunc={showFullBar} />
+          {children}
+        </div>
+      )}
+    </>
+  );
+};
 
-export default Layout ; 
+export default Layout;
