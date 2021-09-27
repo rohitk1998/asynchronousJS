@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: cursive;
 }
 
 .async-navbar{
@@ -30,7 +31,7 @@
 }
 
 .descriptions{
-   box-shadow: rgba(61, 61, 61, 0.2) 1px 1px 20px -1px;
+   box-shadow: rgba(133, 133, 133, 0.2) 1px 1px 20px -1px;
    padding: 20px;
    border-radius: 22px;
 }
@@ -44,27 +45,28 @@
 
 @keyframes colorchange {
   0% {
-      color:black
+      color:rgb(0, 0, 0)
     }
     25% {
-      color: #ffffff;
+      color: #aaa7a7;
     }
     50% {
-      color: black;
+      color: rgb(44, 44, 44);
     }
     75% {
-      color: #ffffff;
+      color: #bdbdbd;
     }
     100% {
-     color: black;
+     color: rgb(0, 0, 0);
     }
 }
 @-webkit-keyframes colorchange {
   0%   {color: rgb(255, 255, 255);}
-  25%  {color: #000000;}
-  75%  {color: rgb(255, 255, 255);}
-  100% {color: #000000;}
+  25%  {color: #ffffff;}
+  75%  {color: rgb(0, 0, 0);}
+  100% {color: #1a1919;}
 }
+
 .h2_title2{
   
   font-size: 70px;
@@ -82,24 +84,24 @@ line-height: 1;
 }
 @keyframes colorChange {
   0% {
-      color:rgb(255, 255, 255)
+      color:rgb(0, 0, 0)
     }
     25% {
-      color: #000000;
+      color: #c94444;
     }
     50% {
-      color: black;
+      color: rgb(255, 255, 255);
     }
     75% {
-      color: #ffffff;
+      color: #000000;
     }
     100% {
-     color: rgb(0, 0, 0);
+     color: rgb(197, 31, 31);
     }
 }
 @-webkit-keyframes colorChange {
   0%   {color: rgb(255, 255, 255);}
   25%  {color: #000000;}
   75%  {color: rgb(255, 255, 255);}
-  100% {color: #000000;}
+  100% {color: #1a1919;}
 }

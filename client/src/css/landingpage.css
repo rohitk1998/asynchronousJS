@@ -6,10 +6,10 @@
     font-size: 70px;
     line-height: 1;
     font-weight: 800;
-     animation: 8s infinite colorchange;
+     /* animation: 8s infinite colorchange; */
 margin: 15px 0;
 }
-@keyframes colorchange {
+/* @keyframes colorchange {
     0% {
         color:black
       }
@@ -30,8 +30,8 @@ margin: 15px 0;
     0%   {color: black;}
     25%  {color: #00DFD8;}
     75%  {color: black;}
-    100% {color: #00DFD8;}
-}
+    100% {color: #00DFD8;} */
+/* } */
 .h2_title2{
     
     font-size: 70px;
@@ -40,14 +40,14 @@ align-items: center;
 justify-content: center;
  line-height: 1;
     font-weight: 800;
-         animation: 8s infinite colorChange;
+         /* animation: 8s infinite colorChange; */
          padding-left: 18px;
          margin: 15px 0;
 
 
 
 }
-@keyframes colorChange {
+/* @keyframes colorChange {
     0% {
         color:black
       }
@@ -69,4 +69,28 @@ justify-content: center;
     25%  {color: #F9CB28;}
     75%  {color: black;}
     100% {color: #F9CB28;}
+} */
+.list{
+  border-top: 2px solid rgba(218, 211, 211, 0.377);
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+  .list h5{
+    padding-left: 2rem;
+    font-weight: 800;
+    color: gray;
+    font-size: 16px;
+    margin: 1rem 0; 
+  }
+.trending_list1,
+.trending_list2{
+  margin: 2rem ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Card{
+  padding: 1rem;
+  box-shadow: rgba(214, 226, 224, 0.116) 0px 50px 100px -20px, rgba(141, 128, 128, 0.3) 0px 30px 60px -30px;
 }
