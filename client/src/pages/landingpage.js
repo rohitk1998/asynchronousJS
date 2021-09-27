@@ -6,7 +6,7 @@ import Landingpage from "../components/landingpage";
 const Home = ()=> {
     
   return (
-    <div>
+    <div className='container-fluid p-3'>
       <Landingpage/>
     </div>
   )
