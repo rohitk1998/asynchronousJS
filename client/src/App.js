@@ -1,10 +1,17 @@
 import { Route } from "react-router-dom";
 import "./App.css";
 import { mainRoute } from "./app_routes/mainroute";
+// import storage from 'redux-persist/lib/storage'
+import SingIn from "./components/authentication/singin";
+
 
 function App() {
+
+  // storage.removeItem("persist:root");
+
   return (
     <>
+     <Route path="/login" exact={true} component={SingIn} />
       {mainRoute.map((route, index) => {
         return (
           <Route

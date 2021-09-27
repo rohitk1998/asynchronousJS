@@ -24,8 +24,7 @@ const Landingpage = () => {
             </p>
             <button
               type="button"
-              class="btn btn-outline-dark"
-              style={{ width: "120px", borderRadius: "12px" }}
+              class="btn btn-outline-dark w-120"
             >
               Start Writing
             </button>
