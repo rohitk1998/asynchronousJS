@@ -4,7 +4,7 @@ const Landingpage = () => {
   return (
       <div className="container landing-apge">
         <div className="row">
-          <div className="col-sm-8">
+          <div className="col-sm-12 col-lg-6">
             <div className="col-sm-12">
               <h1 className="h2_title1">asynchronous</h1>
             </div>
@@ -12,7 +12,7 @@ const Landingpage = () => {
               <h1 className="h2_title2"> Javascript</h1>
             </div>
           </div>
-          <div className="col-sm-4 descriptions" >
+          <div className="col-sm-12 col-lg-6 descriptions" >
             <h2 className="text-dark">
               asynchronousJS is a place
               <br />
