@@ -4,7 +4,7 @@ import menuicon from "../../assests/icons/menu.png";
 function Navbar(props) {
   return (
     <>
-      <div class="container-fluid p-3 bg-light">
+      <div class="container-fluid p-3 bg-light async-navbar">
         <div className="row">
           <div className="col-sm-4 d-flex justify-content-center">
             <p>asynchronousJS</p>
