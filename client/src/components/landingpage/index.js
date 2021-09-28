@@ -20,7 +20,7 @@ const Landingpage = () => {
         </div>
         <div className="col-sm-12 col-lg-6 descriptions">
           <h2 className="text-dark">
-            asynchronousJS is a place
+            <strong>AsynchronousJS</strong>  is a place
             <br />
             to write, read, and connect
           </h2>
@@ -30,14 +30,14 @@ const Landingpage = () => {
           </p>
           <button
             type="button"
-            class="btn btn-outline-dark"
-            style={{ width: "120px", borderRadius: "12px" }}
+            class="btn btn-dark"
+            style={{ width: "120px"}}
           >
             Start Writing
           </button>
         </div>
-
-        <div className="container ">
+      </div>
+      <div className="container">
           <div className="list">
             <h5>
               <span>
