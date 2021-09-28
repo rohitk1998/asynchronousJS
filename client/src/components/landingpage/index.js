@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../../css/landingpage.css";
 import menu from "../../assests/icons/menu.png";
 import abc from "../../assests/icons/abc.jpeg";
 import mnb from "../../assests/icons/mnb.jpeg";
@@ -7,29 +6,19 @@ import xyz from "../../assests/icons/xyz.jpeg";
 import poi from "../../assests/icons/poi.jpeg";
 
 const Landingpage = () => {
-  const [color0, setColor0] = useState("red");
-  const [color1, setColor1] = useState("white");
-
-  useEffect(() => {
-    setColor0("white");
-  }, []);
 
   return (
     <div className="container-fluid landing-apge">
       <div className="row">
         <div className="col-sm-12 col-lg-6">
-          <div className="col-sm-12">
-            <h1 className="h2_title1" style={{ color: color0 }}>
-              asynchronous
+            <h1 className="h2_title1">
+              Asynchronous
             </h1>
-          </div>
-          <div className="col-sm-12">
             <h1 className="h2_title2"> Javascript</h1>
-          </div>
         </div>
         <div className="col-sm-12 col-lg-6 descriptions">
           <h2 className="text-dark">
-            asynchronousJS is a place
+            <strong>AsynchronousJS</strong>  is a place
             <br />
             to write, read, and connect
           </h2>
@@ -39,14 +28,14 @@ const Landingpage = () => {
           </p>
           <button
             type="button"
-            class="btn btn-outline-dark"
-            style={{ width: "120px", borderRadius: "12px" }}
+            class="btn btn-dark"
+            style={{ width: "120px"}}
           >
             Start Writing
           </button>
         </div>
-
-        <div className="container ">
+      </div>
+      <div className="container">
           <div className="list">
             <h5>
               <span>
@@ -250,7 +239,6 @@ const Landingpage = () => {
             </ol>
           </div>
         </div>
-      </div>
     </div>
   );
 };
