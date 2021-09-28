@@ -4,7 +4,6 @@ import { mainRoute } from "./app_routes/mainroute";
 // import storage from 'redux-persist/lib/storage'
 import SingIn from "./components/authentication/singin";
 
-
 function App() {
 
   // storage.removeItem("persist:root");

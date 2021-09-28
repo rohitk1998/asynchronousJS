@@ -4,6 +4,7 @@ import abc from "../../assests/icons/abc.jpeg";
 import mnb from "../../assests/icons/mnb.jpeg";
 import xyz from "../../assests/icons/xyz.jpeg";
 import poi from "../../assests/icons/poi.jpeg";
+import {BlogCard} from "../common/blogcard"
 
 const Landingpage = () => {
 
@@ -11,8 +12,9 @@ const Landingpage = () => {
     <div className="container-fluid landing-apge">
       <div className="row">
         <div className="col-sm-12 col-lg-6">
-            <h1 className="h2_title1">
-              Asynchronous
+       
+            <h1 className="h2_title1"> 
+              asynchronous
             </h1>
             <h1 className="h2_title2"> Javascript</h1>
         </div>
@@ -239,6 +241,49 @@ const Landingpage = () => {
             </ol>
           </div>
         </div>
+      </div>
+      <div className="container-fluid w-100 vh-70 p-3 mt-3">
+     <div className="row">
+     <div className="col-lg-7">
+     <div className="row">
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      </div>
+     </div>
+     <div className="col-lg-5">
+     <div className="row">
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      <div className="col-lg-12 col-sm-6">
+        <BlogCard/>
+      </div>
+      </div>
+     </div>
+     </div>
+      </div>
     </div>
   );
 };
