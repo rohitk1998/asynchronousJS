@@ -1,23 +1,25 @@
 import React from "react";
 import Navbar from "./navbar";
 import MenuBar from "./fullbar";
+import { useDispatch , useSelector } from "react-redux"
+
 
 const Layout = ({ children }) => {
-  const [showmenu, setShowMenu] = React.useState(false);
 
-  const showFullBar = () => {
-    setShowMenu(!showmenu);
-  };
+
+  const showmenu = useSelector((state)=> state.showmenu.state)
+
+  // console.log("showmenu" , showmenu)
 
   return (
     <>
       {showmenu ? (
         <div>
-          <MenuBar showMenuCallbackFunc={showFullBar} />
+          <MenuBar/>
         </div>
       ) : (
         <div>
-          <Navbar showMenuCallbackFunc={showFullBar} />
+          <Navbar/>
           {children}
         </div>
       )}

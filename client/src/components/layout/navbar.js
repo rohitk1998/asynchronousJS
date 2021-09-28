@@ -1,10 +1,17 @@
 import React from "react";
 import menuicon from "../../assests/icons/menu.png";
+import { useDispatch, useSelector } from "react-redux";
+import { SHOW_HIDE_MENU } from "../../redux/actioncreator/types";
+import { useHistory } from "react-router-dom";
 
 function Navbar(props) {
+  const disptach = useDispatch();
+
+  const history = useHistory();
+
   return (
     <>
-      <div class="container-fluid p-3 bg-light async-navbar">
+      <div class="container-fluid p-3 async-navbar">
         <div className="row">
           <div className="col-sm-4 d-flex justify-content-center">
             <p>asynchronousJS</p>
@@ -30,6 +37,7 @@ function Navbar(props) {
                 type="button"
                 className="btn btn-outline-dark"
                 style={{ width: "120px" }}
+                onClick={() => history.push("/login")}
               >
                 Sign In
               </button>
@@ -40,7 +48,7 @@ function Navbar(props) {
                 class="btn"
                 data-toggle="modal"
                 data-target="#menubarModal"
-                onClick={()=> props.showMenuCallbackFunc()}
+                onClick={() => disptach({ type: SHOW_HIDE_MENU })}
               >
                 <img
                   style={{ width: "30px", height: "30px" }}

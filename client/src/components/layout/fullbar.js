@@ -1,7 +1,14 @@
 import cancel from "../../assests/icons/cancel.png";
 import { menu_items } from "./menuitems";
+import { useDispatch , useSelector } from "react-redux"
+import { SHOW_HIDE_MENU }  from "../../redux/actioncreator/types"
+
+
 
 const MenuBar = (props) => {
+
+  const disptach = useDispatch()
+
   return (
     <>
       <div className="menu-icon">
@@ -16,7 +23,7 @@ const MenuBar = (props) => {
                   class="btn"
                   data-toggle="modal"
                   data-target="#menubarModal"
-                  onClick={() => props.showMenuCallbackFunc()}
+                  onClick={() => disptach({type : SHOW_HIDE_MENU })}
                 >
                   <img
                     style={{ width: "20px", height: "20px" }}
@@ -27,7 +34,7 @@ const MenuBar = (props) => {
               </div>
             </div>
           </div>
-          <div className="container bg-dark p-3 ">
+          <div className="container p-3 ">
             {menu_items.map((item, index) => {
               return (
                 <div className="row" key={index}>
