@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: cursive;
@@ -10,20 +10,22 @@
 
 /* h1 for menu heading  */
 
-.menu-icon{
+/* used display-1 for title heading in blog - card  */
+
+
+
+.menu-icon {
   width: 100%;
   height: 100vh;
   background-color: rgb(255, 255, 255) !important;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
-
-.landing-apge{
+.landing-apge {
   padding: 4%;
 }
-.Container{
+.Container {
   margin: 2rem;
- 
 }
 
 .descriptions{
@@ -31,31 +33,47 @@
    padding: 20px;
    border-radius: 22px;
 }
-.h2_title1{
+.h2_title1 {
   font-size: 70px;
   line-height: 1;
   font-weight: 800;
-   animation: 8s infinite colorchange;
+  animation: 8s infinite colorchange;
 margin: 15px 0;
 }
 
 @keyframes colorchange {
   0% {
-    color: rgb(167, 147, 121);
-    }
-    25% {
-      color: #5ab6b6;
-    }
-    50% {
-      color: rgb(255, 144, 16);
-    }
-    75% {
-      color: #000000;
-    }
-    100% {
-     color: rgb(255, 145, 0);
-    }
+    color: rgb(0, 0, 0);
+  }
+  25% {
+    color: #5ab6b6;
+  }
+  50% {
+    color: rgb(44, 44, 44);
+  }
+  75% {
+    color: #bdbdbd;
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
 }
+@-webkit-keyframes colorchange {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  25% {
+    color: #ffffff;
+  }
+  75% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: #1a1919;
+  }
+}
+
+
 @-webkit-keyframes colorchange {
   0%   {color: rgb(126, 117, 106);}
   25%  {color: #559294;}
@@ -63,24 +81,43 @@ margin: 15px 0;
   100% {color: #79a767;}
 }
 .h2_title2{
-  
   font-size: 70px;
-display: flex;
-align-items: center;
-justify-content: center;
-line-height: 1;
+  line-height: 1;
   font-weight: 800;
-       animation: 8s infinite colorChange;
-       padding-left: 18px;
-       margin: 15px 0;
-
-
-
+  animation: 8s infinite colorChange;
+  text-align: center;
 }
 @keyframes colorChange {
   0% {
-      color:rgb(0, 0, 0)
-    }
+    color: rgb(0, 0, 0);
+  }
+  25% {
+    color: #c94444;
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  }
+  75% {
+    color: #000000;
+  }
+  100% {
+    color: rgb(197, 31, 31);
+  }
+}
+@-webkit-keyframes colorChange {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  25% {
+    color: #000000;
+  }
+  75% {
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    color: #1a1919;
+  }
+   
     25% {
       color: #000000;
     }
@@ -129,29 +166,31 @@ line-height: 1;
   padding: 1rem;
   box-shadow: rgba(214, 226, 224, 0.116) 0px 50px 100px -20px, rgba(141, 128, 128, 0.3) 0px 30px 60px -30px;
 }
-.list{
+.list {
   border-top: 2px solid rgba(218, 211, 211, 0.377);
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
-  .list h5{
-    padding-left: 2rem;
-    font-weight: 800;
-    color: gray;
-    font-size: 16px;
-    margin: 1rem 0; 
-  }
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.list h5 {
+  padding-left: 2rem;
+  font-weight: 800;
+  color: gray;
+  font-size: 16px;
+  margin: 1rem 0;
+}
 .trending_list1,
-.trending_list2{
-  margin: 2rem ;
+.trending_list2 {
+  margin: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.Card{
+.Card {
   padding: 1rem;
-  box-shadow: rgba(214, 226, 224, 0.116) 0px 50px 100px -20px, rgba(141, 128, 128, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(214, 226, 224, 0.116) 0px 50px 100px -20px,
+    rgba(141, 128, 128, 0.3) 0px 30px 60px -30px;
 }
 .avatar {
   vertical-align: middle;
@@ -159,6 +198,7 @@ line-height: 1;
   height: 30px;
   border-radius: 50%;
 }
+
 .avatar1 {
   vertical-align: middle;
   width: 250px;
@@ -166,27 +206,38 @@ line-height: 1;
   /* border-radius: 50%; */
 }
 
-
-.trending_span{
+.trending_span {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 
-
-
-/* >>>>>>>>>>>>>>>>>>>>Mobile Responsive<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-@media only screen and (max-width: 989px){
+@media only screen and (max-width: 989px) {
   .trending_list1,
-  .trending_list2{
+  .trending_list2 {
     flex-direction: column;
-
   }
-  .trending_span{
-  
+  .trending_span {
     font-size: 13px;
   }
 }
 
-/* >>>>>>>>>>>>>>>>>>>Login????>>>>>>>>>>>>>>>>>>>..... */
+/* user avatar in blog-card component */
+
+.user-avatar{
+  width: 50px;
+  height: 50px;
+  object-fit:fill ; 
+  border-radius: 99px;
+}
+
+
+/* blog-card-thumbnail */
+
+.blog-card-thumbnail{
+    width: 100%;
+    height:205px;
+    min-height: 205px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
