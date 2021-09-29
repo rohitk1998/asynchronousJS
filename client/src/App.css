@@ -34,7 +34,7 @@
    border-radius: 22px;
 }
 .h2_title1 {
-  font-size: 70px;
+  font-size: 85px;
   line-height: 1;
   font-weight: 800;
   animation: 8s infinite colorchange;
@@ -81,7 +81,7 @@ margin: 15px 0;
   100% {color: #79a767;}
 }
 .h2_title2{
-  font-size: 70px;
+  font-size: 85px;
   line-height: 1;
   font-weight: 800;
   animation: 8s infinite colorChange;

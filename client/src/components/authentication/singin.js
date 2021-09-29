@@ -4,7 +4,10 @@ import { useForm } from "react-hook-form";
 
 const SingIn = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+  const onSubmit = (data,e)=>{
+   console.log(data)
+   e.target.reset()
+  };
   return (
     <div className = 'container-fluid d-flex align-items-center justify-content-center w-100 vh-100 '>
    <div className='row d-flex justidy-content-space-between w-100 m-5'>
