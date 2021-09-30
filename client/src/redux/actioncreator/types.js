@@ -1,1 +1,2 @@
 export const SHOW_HIDE_MENU = "SHOW_HIDE_MENU"
+export const SHOW_SIGNIN_POPUP = "SHOW_SIGNIN_POPUP"
