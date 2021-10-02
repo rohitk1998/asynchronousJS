@@ -1,15 +1,15 @@
-export const BlogCard = () => {
+export const BlogCard = ({blogdata}) => {
   return (
-    <div className="container-fluid blog-card mt-3 mb-5 p-0 rounded h-fit-content shadow-lg">
+    <div className="container-fluid blog-card mt-1 mb-5 p-0 rounded h-fit-content shadow-sm">
       <div className="row">
         <div className="col-sm-12 col-lg-4 d-flex align-items-center justify-content-center">
           <img
-            src="https://images.unsplash.com/photo-1632822025035-964e9ae087d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80"
+            src={blogdata.blog_thumbnail}
             className="blog-card-thumbnail"
             alt=""
           />
         </div>
-        <div className="col-sm-12 col-lg-8 mt-3">
+        <div className="col-sm-12 col-lg-8 mt-1">
           <div className="container-fluid d-flex flex-nowrap align-items-center  justify-content-start flex-grow-1">
             <img
               class="user-avatar"
@@ -27,7 +27,7 @@ export const BlogCard = () => {
           <div className="container-fluid d-block flex-column flex-nowrap align-items-start  justify-content-start flex-grow-1 mt-2">
             <h4 className="display-8 text-right text-truncate">
               <strong>
-                9-5 Employees Keep Telling Themselves the Lie “One More Year”
+                {blogdata.blog_title}
               </strong>
             </h4>
             <h5 className="h6 text-right text-truncate">
@@ -35,8 +35,7 @@ export const BlogCard = () => {
             </h5>
           </div>
           <div className="container-fluid d-flex flex-row flex-wrap align-items-center  justify-content-start">
-            <p className="text-muted text-center mt-3">5min Read</p>
-            <button className="btn btn-light rounded m-3">reactjs</button>
+            <p className="text-muted text-center mt-2">5min Read</p>
           </div>
         </div>
       </div>
