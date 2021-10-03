@@ -17,13 +17,13 @@ function* menuSaga(){
 function* ShowSignInPopup(){
    yield({type:SHOW_SIGNIN_POPUP})
 }
-function* signinSaga(){
+function* userSaga(){
 yield takeEvery({type:SHOW_SIGNIN_POPUP},ShowSignInPopup)
 }
 
 export default function* rootSaga(){
      yield all[
         menuSaga(),
-        signinSaga()
+        userSaga()
      ]
 }

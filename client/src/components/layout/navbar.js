@@ -3,6 +3,8 @@ import menuicon from "../../assests/icons/menu.png";
 import { useDispatch, useSelector } from "react-redux";
 import { SHOW_HIDE_MENU } from "../../redux/actioncreator/types";
 import { useHistory } from "react-router-dom";
+import Sticky from "react-sticky-el";
+
 
 function Navbar(props) {
   const disptach = useDispatch();
@@ -14,10 +16,10 @@ function Navbar(props) {
       <div class="container-fluid p-3 async-navbar">
         <div className="row">
           <div className="col-sm-4 d-flex justify-content-center">
-            <p>asynchronousJS</p>
+            <h3><strong>asynchronousJS</strong></h3>
           </div>
           <div className="col-sm-4">
-            <div className="container">
+            {/* <div className="container">
               <div className="row">
                 <div className="col-sm-2">
                   <p>Home</p>
@@ -29,7 +31,7 @@ function Navbar(props) {
                   <p>Javascript</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="col-sm-4 d-flex flex-row justify-content-around">
             <div>
