@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { SHOW_HIDE_MENU } from "../../redux/actioncreator/types";
 import { useHistory } from "react-router-dom";
 import Sticky from "react-sticky-el";
-
+import Modal from "../common/Modal/index";
 
 function Navbar(props) {
   const disptach = useDispatch();
@@ -35,14 +35,9 @@ function Navbar(props) {
           </div>
           <div className="col-sm-4 d-flex flex-row justify-content-around">
             <div>
-              <button
-                type="button"
-                className="btn btn-outline-dark"
-                style={{ width: "120px" }}
-                onClick={() => history.push("/login")}
-              >
-                Sign In
-              </button>
+             
+                <Modal/>
+           
             </div>
             <div>
               <button
