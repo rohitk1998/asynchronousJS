@@ -51,7 +51,7 @@ const Landingpage = () => {
                   viewBox="0 0 16 16"
                 >
                   <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z" />
-                </svg>{" "}
+                </svg>
               </span>
               Trending on asynchronousJS
             </h5>
@@ -64,7 +64,7 @@ const Landingpage = () => {
                     onClick={() => disptach({ type: SHOW_SIGNIN_POPUP })}
                   >
                     <span className="trending_span">
-                      {" "}
+                
                       <img src={abc} alt="Avatar" class="avatar" />
                       <p style={{ paddingLeft: "12px" }}>
                         Yesterday Andrei Tapalaga ✒️ in History of Yesterday
@@ -80,10 +80,10 @@ const Landingpage = () => {
                       <img src={mnb} alt="Avatar" class="avatar1" />
 
                       <p style={{ paddingLeft: "10px" }}>
-                        {" "}
+                   
                         Chernobyl’s Blown Up Reactor 4 Just Woke Up
                       </p>
-                    </div>{" "}
+                    </div>
                     <p style={{ paddingTop: "1rem" }}>Sep 08</p>
                   </div>
                 </li>
@@ -106,18 +106,18 @@ const Landingpage = () => {
                       <img src={poi} alt="Avatar" class="avatar1" />
 
                       <p style={{ paddingLeft: "10px" }}>
-                        {" "}
+                   
                         Chernobyl’s Blown Up Reactor 4 Just Woke Up
                       </p>
-                    </div>{" "}
+                    </div>
                     <p style={{ paddingTop: "1rem" }}>Sep 08</p>
                   </div>
                 </li>
                 <li>
-                  {" "}
+              
                   <div className="Card">
                     <span className="trending_span">
-                      {" "}
+                 
                       <img src={abc} alt="Avatar" class="avatar" />
                       <p style={{ paddingLeft: "12px" }}>
                         Yesterday Andrei Tapalaga ✒️ in History of Yesterday
@@ -133,10 +133,10 @@ const Landingpage = () => {
                       <img src={xyz} alt="Avatar" class="avatar1" />
 
                       <p style={{ paddingLeft: "10px" }}>
-                        {" "}
+                  
                         Chernobyl’s Blown Up Reactor 4 Just Woke Up
                       </p>
-                    </div>{" "}
+                    </div>
                     <p style={{ paddingTop: "1rem" }}>Sep 08</p>
                   </div>
                 </li>
@@ -145,7 +145,7 @@ const Landingpage = () => {
                 <li>
                   <div className="Card">
                     <span className="trending_span">
-                      {" "}
+                  
                       <img src={poi} alt="Avatar" class="avatar" />
                       <p style={{ paddingLeft: "12px" }}>
                         Yesterday Andrei Tapalaga ✒️ in History of Yesterday
@@ -161,10 +161,10 @@ const Landingpage = () => {
                       <img src={mnb} alt="Avatar" class="avatar1" />
 
                       <p style={{ paddingLeft: "10px" }}>
-                        {" "}
+                       
                         Chernobyl’s Blown Up Reactor 4 Just Woke Up
                       </p>
-                    </div>{" "}
+                    </div>
                     <p style={{ paddingTop: "1rem" }}>Sep 08</p>
                   </div>
                 </li>
@@ -186,10 +186,10 @@ const Landingpage = () => {
                       <img src={xyz} alt="Avatar" class="avatar1" />
 
                       <p style={{ paddingLeft: "10px" }}>
-                        {" "}
+                 
                         Chernobyl’s Blown Up Reactor 4 Just Woke Up
                       </p>
-                    </div>{" "}
+                    </div>
                     <p style={{ paddingTop: "1rem" }}>Sep 08</p>
                   </div>
                 </li>
@@ -211,7 +211,7 @@ const Landingpage = () => {
                       <img src={abc} alt="Avatar" class="avatar1" />
 
                       <p style={{ paddingLeft: "10px" }}>
-                        {" "}
+                 
                         Chernobyl’s Blown Up Reactor 4 Just Woke Up
                       </p>
                     </div>
