@@ -1,4 +1,6 @@
-import { BlogCard } from "../common/blogcard";
+import TrendingBlogCard from "../common/trendingblogs";
+
+
 const TrendingTopices = ({ data }) => {
   return (
     <>
@@ -8,12 +10,12 @@ const TrendingTopices = ({ data }) => {
             <h1 className="h1 p-2">Trending programming Topics</h1>
           </div>
         </div>
-        <div className="row mt-4 p-2">
+        <div className="row p-2">
           {data !== undefined
             ? data.getBlogList.map((blog, index) => {
                 return (
-                  <div key={index} className="col-lg-4 col-sm-4">
-                    <BlogCard blogdata={blog} />
+                  <div key={index} className="col-lg-3 col-sm-6 mt-4 mb-4">
+                    <TrendingBlogCard blogdata={blog} />
                   </div>
                 );
               })
