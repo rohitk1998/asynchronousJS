@@ -1,6 +1,5 @@
-import { BlogCard } from "../common/blogcard";
 import Sticky from "react-sticky-el";
-
+import { BlogCard } from "../common/blogcard";
 
 const ProgrammingTopices = ({ data }) => {
   return (
@@ -33,4 +32,4 @@ const ProgrammingTopices = ({ data }) => {
   );
 };
 
-export default ProgrammingTopices ; 
+export default ProgrammingTopices;
