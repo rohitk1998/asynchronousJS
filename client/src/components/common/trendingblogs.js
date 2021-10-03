@@ -1,16 +1,25 @@
-export const BlogCard = ({blogdata}) => {
-  return (
-    <div className="container-fluid blog-card mt-1 mb-5 p-0 rounded h-fit-content">
-      <div className="row">
-        <div className="col-sm-12 col-lg-4 d-flex align-items-center justify-content-center">
+
+
+
+
+
+
+
+
+
+const TrendingBlogCard = ({blogdata})=> {
+    return (
+        <div className="trending-blog-card">
+            <div className="row" >
           <img
             src={blogdata.blog_thumbnail}
-            className="blog-card-thumbnail"
+            className="trending-blog-card-thumbnail"
             alt=""
           />
-        </div>
-        <div className="col-sm-12 col-lg-8 mt-1">
-          <div className="container-fluid d-flex flex-nowrap align-items-center  justify-content-start flex-grow-1">
+            </div>
+      <div className="row">
+        <div className="col-sm-12 col-lg-12 mt-1">
+          <div className="container-fluid d-flex flex-nowrap align-items-center justify-content-start mt-3">
             <img
               class="user-avatar"
               src="https://images.unsplash.com/photo-1621609764095-b32bbe35cf3a?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -18,7 +27,7 @@ export const BlogCard = ({blogdata}) => {
 
             <h6 className="h5 p-2 text">
               {" "}
-              <strong>New User</strong>
+              New User
             </h6>
 
             <h6 className="h6 p-2 text-muted"> 29 September 2021</h6>
@@ -26,13 +35,13 @@ export const BlogCard = ({blogdata}) => {
 
           <div className="container-fluid d-block flex-column flex-nowrap align-items-start  justify-content-start flex-grow-1 mt-2">
             <h4 className="display-8 text-right text-truncate">
-              <strong>
+            
                 {blogdata.blog_title}
-              </strong>
+              
             </h4>
-            <h5 className="h6 text-right text-truncate">
+            <p className="h6 text-right text-truncate">
               9-5 Employees Keep Telling Themselves the Lie “One More Year”
-            </h5>
+            </p>
           </div>
           <div className="container-fluid d-flex flex-row flex-wrap align-items-center  justify-content-start">
             <p className="text-muted text-center mt-2">5min Read</p>
@@ -40,5 +49,7 @@ export const BlogCard = ({blogdata}) => {
         </div>
       </div>
     </div>
-  );
-};
+    )
+}
+
+export default TrendingBlogCard ; 
