@@ -1,20 +1,20 @@
 import React,{useState} from "react";
 import SignInWithEmail from "./SignInWithEmail";
 import SignUp from "./SignUp";
+import {SHOW_SIGNIN_POPUP} from '../../../redux/actioncreator/types'
+import {useDispatch,useSelector} from 'react-redux'
 function Modal() {
     const [emailActive,setEmailActive] = useState(false)
     const[createAccount,setCreateAccount]=useState(false)
+    const disptach = useDispatch()
+    const showSignIn = useSelector((state)=> state.showSignIn.state)
+
+
   return (
     <>
-      <button
-        type="button"
-        className="btn btn-outline-dark"
-        data-toggle="modal"
-        data-target="#exampleModal"
-        style={{ width: "120px" }}
-      >
-        Sign In
-      </button>
+    {
+showSignIn?
+    
         <div
           class="modal fade"
           id="exampleModal"
@@ -28,9 +28,10 @@ function Modal() {
             <div class="modal-content " >
             <button
                   type="button"
-                  class="close"
+                  class="btn"
                   data-dismiss="modal"
                   aria-label="Close"
+                  onClick={() => disptach({ type: SHOW_SIGNIN_POPUP })}
                   style={{ border: "none",position:'absolute' ,right:'4%',top:'0%',fontSize:'30px'}}
                 >
                   <span aria-hidden="true">&times;</span>
@@ -97,8 +98,8 @@ emailActive?
               
             </div>
           </div>
-        </div>
-      
+        </div>:null
+}
     </>
   );
 }
