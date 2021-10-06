@@ -42,6 +42,7 @@ function Card1() {
           <img
             src="https://miro.medium.com/max/700/1*FMNhW_BX4aus76enkDi9bg.jpeg"
             style={{ width: "650px", height: "450px" }}
+            alt=""
           />
           <div className='container' style={{width:'90%'}} >
           <p style={{marginTop:'10px'}}>
@@ -70,13 +71,13 @@ function Card1() {
               <div className='col-3'>  <h6>Communication in Modern Family</h6>
                 <p>Austin Wojciehowski</p></div>
               <div className='col-3'>
-                <img src='https://miro.medium.com/max/700/1*FMNhW_BX4aus76enkDi9bg.jpeg' style={{ width: '65px', height: '65px' }} />
+                <img src='https://miro.medium.com/max/700/1*FMNhW_BX4aus76enkDi9bg.jpeg' style={{ width: '65px', height: '65px' }} alt=''/>
               </div>
 
               <div className='col-3'>  <h6>Communication in Modern Family</h6>
                 <p>Austin Wojciehowski</p></div>
               <div className='col-3'>
-                <img src='https://miro.medium.com/max/700/1*FMNhW_BX4aus76enkDi9bg.jpeg' style={{ width: '65px', height: '65px' }} />
+                <img src='https://miro.medium.com/max/700/1*FMNhW_BX4aus76enkDi9bg.jpeg' style={{ width: '65px', height: '65px' }} alt='' />
               </div>
        
           </div>

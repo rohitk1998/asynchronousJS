@@ -55,7 +55,7 @@ emailActive?
                 <div className="col-12 mt-3">
        
                   <button type="button" class="btn btn-outline-dark"  style={{borderRadius:'10px'}}>
-                  <img src="/static/media/googleicon.010946f4.png" style={{ width: '18px', height: '18px' }} />
+                  <img src="/static/media/googleicon.010946f4.png" style={{ width: '18px', height: '18px' }} alt='' />
 
                     <span className='pl-3'>  Sign In  with Google</span>
                   
