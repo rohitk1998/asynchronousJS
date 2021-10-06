@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar";
 import MenuBar from "./fullbar";
 import { useDispatch , useSelector } from "react-redux"
+import AppFooter from "./footer";
 
 
 const Layout = ({ children }) => {
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
         <div>
           <Navbar/>
           {children}
+          <AppFooter/>
         </div>
       )}
     </>

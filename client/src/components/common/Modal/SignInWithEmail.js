@@ -2,8 +2,8 @@ import React from "react";
 
 function SignInWithEmail({setEmailActive}) {
   return (
-    <div className="container mt-5 d-flex flex-column text-center">
-      <div className="col-12 mt-5">
+    <div className="container mt-2 d-flex flex-column text-center">
+      <div className="col-12 mt-3">
         <h3>Sign in with email</h3>
       </div>
       <div className="col-12">
@@ -14,7 +14,7 @@ function SignInWithEmail({setEmailActive}) {
           your inbox.
         </p>
       </div>
-      <div className="col-12 mt-5 mb-5">
+      <div className="col-12 mt-3 mb-5">
         <p>Your email</p>
         <div>
           {" "}
@@ -26,7 +26,7 @@ function SignInWithEmail({setEmailActive}) {
               borderRight: "none",
               borderLeft: "none",
               borderBottom: "2px solid black",
-              borderRadius: "5px",
+              // borderRadius: "5px",
               textAlign: "center",
             }}
           />
