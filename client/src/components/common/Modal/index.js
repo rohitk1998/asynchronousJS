@@ -24,7 +24,7 @@ function Modal() {
           aria-hidden="true"
           style={{ backgroundColor: "white" }}
         >
-          <div class="modal-dialog" role="document" style={{top:'20%'}}>
+          <div class="modal-dialog" role="document" style={{top:'17%'}}>
             <div class="modal-content " >
             <button
                   type="button"

@@ -3,8 +3,8 @@ import React from "react";
 function SignUp({ setCreateAccount }) {
   return (
 
-    <div className="container mt-5 d-flex flex-column text-center">
-      <div className="col-12 mt-5">
+    <div className="container mt-4 d-flex flex-column text-center">
+      <div className="col-12 mt-4">
         <h3 style={{ fontWeight: '600' }}>Join AsyncJS.</h3>
       </div>
       <div className="col-12 mt-5">
