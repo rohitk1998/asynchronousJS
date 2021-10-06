@@ -1,14 +1,14 @@
 import React from "react";
 
-function SignUp() {
+function SignUp({setCreateAccount}) {
   return (
     
     <div className="container mt-5 d-flex flex-column text-center">
       <div className="col-12 mt-5">
-        <h3>Join AsyncJS.</h3>
+        <h3 style={{fontWeight:'600'}}>Join AsyncJS.</h3>
       </div>
       <div className="col-12 mt-5">
-        <button></button>{" "}
+        
         <button
           type="button"
           class="btn btn-outline-dark"
@@ -43,7 +43,7 @@ function SignUp() {
                   
                   </button>
                 </div><div className='col-12 mt-4'>
-                    <h4>Already have an account?<span style={{color:'green',cursor:'pointer'}}>Sign in</span></h4>
+                    <h4>Already have an account?<span style={{color:'green',cursor:'pointer'}} onClick={()=>setCreateAccount(prevDisplay=>!prevDisplay)}>Sign in</span></h4>
                 </div>
       </div>
     </div>

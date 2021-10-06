@@ -35,8 +35,8 @@ const TrendingBlogCard = ({blogdata})=> {
 
           <div className="container-fluid d-block flex-column flex-nowrap align-items-start  justify-content-start flex-grow-1 mt-2">
             <h4 className="display-8 text-right text-truncate">
-            
-                {blogdata.blog_title}
+            Will SHIBA INU Ever Hit 1 Cent? With Math Facts!
+                {/* {blogdata.blog_title} */}
               
             </h4>
             <p className="h6 text-right text-truncate">
