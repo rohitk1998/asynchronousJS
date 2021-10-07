@@ -8,7 +8,7 @@ function SignInWithEmail({setEmailActive}) {
       </div>
       <div className="col-12">
         <p>
-          {" "}
+      
           Enter the email address associated with <br />
           your account, and we’ll send a magic link to <br />
           your inbox.
@@ -17,7 +17,7 @@ function SignInWithEmail({setEmailActive}) {
       <div className="col-12 mt-3 mb-5">
         <p>Your email</p>
         <div>
-          {" "}
+     
           <input
             type="text"
             style={{
