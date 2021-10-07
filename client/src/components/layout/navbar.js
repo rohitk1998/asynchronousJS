@@ -34,7 +34,7 @@ function Navbar(props) {
           <div className="col-sm-4 d-flex flex-row justify-content-around">
             <div>
              
-                <Modal/>
+                <Modal buttonName='SignIn' title={'Welcome Back'}/>
            
             </div>
             <div>

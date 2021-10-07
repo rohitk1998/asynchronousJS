@@ -8,13 +8,13 @@ export const homeRoute = [
         path : '/' , 
         exact : true , 
         layout : Layout , 
-        component : ()=> <Redirect to="/login" />
-    },
-    {
-        path: "/home",
-        layout: Layout,
         component: Home,
-      },
+    },
+    // {
+    //     path: "/home",
+    //     layout: Layout,
+    //     component: Home,
+    //   },
       {
           path:'/next',
           layout:Layout,
