@@ -14,7 +14,7 @@ function Navbar(props) {
       <div class="container-fluid p-3 async-navbar">
         <div className="row">
           <div className="col-sm-4 d-flex justify-content-center">
-            <h3 onClick={() =>{history.push('/home')}} style={{cursor:'pointer'}}><strong>asynchronousJS</strong></h3>
+            <h3 onClick={() =>{history.push('/')}} style={{cursor:'pointer'}}><strong>asynchronousJS</strong></h3>
           </div>
           <div className="col-sm-4">
             {/* <div className="container">
@@ -34,7 +34,7 @@ function Navbar(props) {
           <div className="col-sm-4 d-flex flex-row justify-content-around">
             <div>
              
-                <Modal buttonName='SignIn' title={'Welcome Back'}/>
+                <Modal buttonName='Sign In' title={'Welcome Back'}/>
            
             </div>
             <div>
