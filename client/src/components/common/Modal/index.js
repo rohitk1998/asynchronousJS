@@ -12,9 +12,9 @@ function Modal() {
 
   return (
     <>
-    {
-showSignIn?
-    
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+ Sign In
+</button>
         <div
           class="modal fade"
           id="exampleModal"
@@ -91,8 +91,8 @@ emailActive?
               
             </div>
           </div>
-        </div>:null
-}
+        </div>
+
     </>
   );
 }

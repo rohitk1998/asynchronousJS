@@ -1,14 +1,19 @@
 import React from "react";
 import menuicon from "../../assests/icons/menu.png";
-import { useDispatch } from "react-redux";
-import { SHOW_HIDE_MENU } from "../../redux/actioncreator/types";
+
+import { useDispatch, useSelector } from "react-redux";
+import { SHOW_HIDE_MENU,SHOW_SIGNIN_POPUP } from "../../redux/actioncreator/types";
 import { useHistory } from "react-router-dom";
-import Modal from "../common/Modal/index";
+import Modal from "../common/Modal";
+import Sticky from "react-sticky-el";
+
+
+
 function Navbar(props) {
   const disptach = useDispatch();
 
-  // const showSignIn = useSelector((state)=> state.showSignIn.state)
-// 
+  const showSignIn = useSelector((state)=> state.showSignIn.state)
+
   const history = useHistory();
 
   return (
@@ -37,14 +42,14 @@ function Navbar(props) {
           <div className="col-sm-4 d-flex flex-row justify-content-around">
             
             <div>
-              <button
+              {/* <button
                 type="button"
-                className="btn btn-outline-dark"
+                // className="btn btn-outline-dark"
                 style={{ width: "120px" }}
                 // onClick={() => disptach({ type: SHOW_SIGNIN_POPUP })}
-              ><Modal/>
-         
-              </button>
+              > */}
+                <Modal/>
+              {/* </button> */}
             </div>
             <div>
               <button
