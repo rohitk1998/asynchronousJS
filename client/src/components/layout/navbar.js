@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import menuicon from "../../assests/icons/menu.png";
 import { useDispatch } from "react-redux";
 import { SHOW_HIDE_MENU } from "../../redux/actioncreator/types";
 import { useHistory } from "react-router-dom";
 import Modal from "../common/Modal/index";
 function Navbar(props) {
+  
   const disptach = useDispatch();
+  const state = useSelector((state)=> state )
 
-  const history = useHistory();
+  useEffect(()=>{
+console.log(state)
+  },[state])
+
 
   return (
     <>
@@ -17,19 +22,6 @@ function Navbar(props) {
             <h3 onClick={() =>{history.push('/')}} style={{cursor:'pointer'}}><strong>asynchronousJS</strong></h3>
           </div>
           <div className="col-sm-4">
-            {/* <div className="container">
-              <div className="row">
-                <div className="col-sm-2">
-                  <p>Home</p>
-                </div>
-                <div className="col-sm-2">
-                  <p>Blog</p>
-                </div>
-                <div className="col-sm-2">
-                  <p>Javascript</p>
-                </div>
-              </div>
-            </div> */}
           </div>
           <div className="col-sm-4 d-flex flex-row justify-content-around">
             <div>
@@ -43,7 +35,7 @@ function Navbar(props) {
                 class="btn"
                 data-toggle="modal"
                 data-target="#menubarModal"
-                onClick={() => disptach({ type: SHOW_HIDE_MENU })}
+                onClick={() => disptach(menuAction())}
               >
                 <img
                   style={{ width: "30px", height: "30px" }}

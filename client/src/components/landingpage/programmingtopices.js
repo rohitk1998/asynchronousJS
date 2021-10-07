@@ -15,8 +15,8 @@ const ProgrammingTopices = ({ data }) => {
           </div>
           <div className="col-lg-7 col-sm-12">
             <div className="row">
-              {data !== undefined
-                ? data.getBlogList.map((blog, index) => {
+              {data.length !== 0
+                ? data.map((blog, index) => {
                     return (
                       <div key={index} className="col-lg-12 col-sm-6">
                         <BlogCard blogdata={blog} />

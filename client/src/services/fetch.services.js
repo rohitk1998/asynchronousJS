@@ -9,6 +9,8 @@ export const getAsyncResponse = (
   headers
 ) => {  
 return new Promise((resolve,reject)=>{
+
+  console.log("s")
     
   return asyncFetch(method , url , params , body , headers )
     .then((res) => asyncResponseHandler(res , resolve))

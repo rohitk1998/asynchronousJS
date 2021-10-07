@@ -10,9 +10,10 @@ const TrendingTopices = ({ data }) => {
             <h1 className="h1 p-2">Trending programming Topics</h1>
           </div>
         </div>
+        {console.log(data)}
         <div className="row p-2">
-          {data !== undefined
-            ? data.getBlogList.map((blog, index) => {
+          {data.length !== 0
+            ? data.map((blog, index) => {
                 return (
                   <div key={index} className="col-lg-3 col-sm-6 mt-4 mb-4">
                     <TrendingBlogCard blogdata={blog} />
