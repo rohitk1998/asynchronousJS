@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import menuicon from "../../assests/icons/menu.png";
-import { useDispatch, useSelector } from "react-redux";
-import { menuAction  } from "../../redux/actions/useraction"
-// import { useHistory } from "react-router-dom";
-// import Sticky from "react-sticky-el";
+import { useDispatch } from "react-redux";
+import { SHOW_HIDE_MENU } from "../../redux/actioncreator/types";
+import { useHistory } from "react-router-dom";
 import Modal from "../common/Modal/index";
-
 function Navbar(props) {
   
   const disptach = useDispatch();
@@ -21,14 +19,14 @@ console.log(state)
       <div class="container-fluid p-3 async-navbar">
         <div className="row">
           <div className="col-sm-4 d-flex justify-content-center">
-            <h3><strong>asynchronousJS</strong></h3>
+            <h3 onClick={() =>{history.push('/')}} style={{cursor:'pointer'}}><strong>asynchronousJS</strong></h3>
           </div>
           <div className="col-sm-4">
           </div>
           <div className="col-sm-4 d-flex flex-row justify-content-around">
             <div>
              
-                <Modal/>
+                <Modal buttonName='Sign In' title={'Welcome Back'}/>
            
             </div>
             <div>
