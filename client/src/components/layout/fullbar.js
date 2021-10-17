@@ -9,7 +9,6 @@ import { userTypes }  from "../../redux/actions/actiontypes"
 const MenuBar = (props) => {
 
   const disptach = useDispatch()
-
   const state = useSelector((state)=> state )
 
 

@@ -311,3 +311,7 @@ background-color: black;
 }
 
 
+.modal-content{
+  width: 130% !important;
+  height: 600px;
+}

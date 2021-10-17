@@ -33,7 +33,7 @@ function Modal({
         aria-hidden="true"
         style={{ backgroundColor: "white" }}
       >
-        <div class="modal-dialog" role="document" style={{ top: "12%" }}>
+        <div class="modal-dialog" role="document" style={{ top: "12%" , left:"-5%" }}>
           <div class="modal-content ">
             <button
               type="button"
@@ -69,7 +69,7 @@ function Modal({
               <>
                 <div
                   class="modal-header"
-                  style={{ borderBottom: "none", justifyContent: "center" }}
+                  style={{ borderBottom: "none", justifyContent: "center" ,paddingTop:"60px"}}
                 >
                   <h2 class="modal-title mt-5" id="exampleModalLabel">
                    {title}
