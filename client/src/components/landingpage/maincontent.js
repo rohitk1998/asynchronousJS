@@ -1,5 +1,5 @@
-
-
+import { useState } from "react";
+import Modal from "../common/Modal/index";
 
 const MainContent = () => {
 
@@ -22,13 +22,16 @@ const MainContent = () => {
             <br />
             and connect with millions of readers.
           </p>
+          <div>
           <button
-            type="button"
-            class="btn btn-dark p-2"
-            style={{ width: "200px" }}
-          >
-            Start Writing
-          </button>
+        type="button"
+        className="btn btn-outline-dark"
+   
+        style={{ width: "120px" }}
+      >
+    Start Writing
+      </button>
+          </div>
         </div>
       </div>
     </>

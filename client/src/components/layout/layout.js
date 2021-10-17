@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useEffect } from "react";
 import Navbar from "./navbar";
 import MenuBar from "./fullbar";
 import { useDispatch , useSelector } from "react-redux"
@@ -8,9 +8,11 @@ import AppFooter from "./footer";
 const Layout = ({ children }) => {
 
 
-  const showmenu = useSelector((state)=> state.showmenu.state)
+  const showmenu = useSelector((state)=> state.user.menustate )
 
-  // console.log("showmenu" , showmenu)
+  useEffect(()=>{
+   console.log(showmenu)
+  },[showmenu])
 
   return (
     <>

@@ -1,8 +1,13 @@
 import { combineReducers } from "redux"
-import  showmenuReducer  from "./showmenu"
-import showsigninReducer from "./showSignIn"
+import { user } from "./user"
+import { blog } from "./blog"
+
+
+
+
+
 export const rootReducer = combineReducers({
 
-    showmenu :showmenuReducer , 
-    showSignIn :showsigninReducer
+    user :user, 
+    blogs : blog
 })

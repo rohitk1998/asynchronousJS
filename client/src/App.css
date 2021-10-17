@@ -23,7 +23,7 @@
 }
 
 .app-footer{
-  height: 500px;
+  height: 270px;
   background-color: black;
   width: 100%;
 }
@@ -80,13 +80,13 @@
   font-size:300%;
   line-height: 1;
   font-weight: 800;
-  animation: 8s infinite colorchange;
+  animation: 8s infinite Colorchange;
 margin: 15px 0;
 }
 
-@keyframes colorchange {
+@keyframes Colorchange {
   0% {
-    color: rgb(0, 0, 0);
+    color: rgb(111, 154, 160);
   }
   25% {
     color: #cacaca;
@@ -101,15 +101,15 @@ margin: 15px 0;
     color: rgb(0, 0, 0);
   }
 }
-@-webkit-keyframes colorchange {
+@-webkit-keyframes Colorchange {
   0% {
-    color: rgb(255, 255, 255);
+    color: rgb(192, 164, 86);
   }
   25% {
-    color: #cacaca;
+    color: #5c9c7e;
   }
   75% {
-    color: rgb(0, 0, 0);
+    color: rgb(148, 167, 83);
   }
   100% {
     color: #1a1919;
@@ -128,13 +128,13 @@ margin: 15px 0;
     color: rgb(0, 0, 0);
   }
   25% {
-    color: #cacaca;
+    color: #5c9c7e;
   }
   50% {
-    color: rgb(0, 0, 0);
+    color: rgb(148, 167, 83);
   }
   75% {
-    color: #cacaca;
+    color: #b3916b;
   }
   100% {
     color: rgb(0, 0, 0);
@@ -145,33 +145,21 @@ margin: 15px 0;
     color: #cacaca;
   }
   25% {
-    color: #000000;
+    color: #5c9c7e;
   }
   75% {
-    color: #cacaca;
+    color: rgb(204, 167, 86);
   }
   100% {
     color: #1a1919;
   }
    
-    25% {
-      color: #000000;
-    }
-    50% {
-      color: black;
-    }
-    75% {
-      color: #cacaca;
-
-    }
-    100% {
-     color: rgb(0, 0, 0);
-    }
+   
 }
 @-webkit-keyframes colorChange {
-  0%   {color: rgb(37, 37, 37);}
-  25%  {color: #000000;}
-  75%  {color: rgb(99, 99, 99);}
+  0%   {color: rgb(124, 186, 181);}
+  25%  {    color: #5c9c7e;}
+  75%  {  color: rgb(204, 178, 75);}
   100% {color: #000000;}
 }
 
@@ -323,3 +311,7 @@ background-color: black;
 }
 
 
+.modal-content{
+  width: 130% !important;
+  height: 600px;
+}

@@ -1,14 +1,20 @@
+import React , {useEffect}  from "react";
 import cancel from "../../assests/icons/cancel.png";
 import { menu_items } from "./menuitems";
 import { useDispatch , useSelector } from "react-redux"
-import { SHOW_HIDE_MENU }  from "../../redux/actioncreator/types"
+import { userTypes }  from "../../redux/actions/actiontypes"
 
 
 
 const MenuBar = (props) => {
 
   const disptach = useDispatch()
+  const state = useSelector((state)=> state )
 
+
+  useEffect(()=>{
+    console.log("state" , state)
+},[state])
 
   return (
     <>
@@ -24,7 +30,7 @@ const MenuBar = (props) => {
                   class="btn"
                   data-toggle="modal"
                   data-target="#menubarModal"
-                  onClick={() => disptach({type : SHOW_HIDE_MENU })}
+                  onClick={() => disptach({type : userTypes.SHOW_HIDE_MENU })}
                 >
                   <img
                     style={{ width: "20px", height: "20px" }}
