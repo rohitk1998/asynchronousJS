@@ -4,7 +4,7 @@ function SignUp({ setCreateAccount }) {
   const [emailActive, setEmailActive] = React.useState(false);
 
   return (
-    <div className="container mt-4 d-flex flex-column text-center">
+    <div className="container-fluid mt-4 d-flex flex-column text-center">
       {emailActive ? (
         <SignInWithEmail
           activeSignUp={emailActive}
@@ -15,23 +15,25 @@ function SignUp({ setCreateAccount }) {
         />
       ) : (
         <>
-          <div className="col-12 mt-4">
-            <h3 style={{ fontWeight: "600" }}>Join AsyncJS.</h3>
-          </div>
-          <div className="col-12 mt-5">
-            <button
-              type="button"
-              class="btn btn-outline-dark"
-              style={{ borderRadius: "10px" }}
-            >
-              <img
-                src="/static/media/googleicon.010946f4.png"
-                style={{ width: "18px", height: "18px" }}
-                alt=""
-              />
-              <span className="pl-3">Sign Up with Google</span>
-            </button>
-            <div className="col-12 mt-3 mb-3">
+          <div className="row p-2">
+            <div className="col-12">
+              <h3>Join AsyncJS.</h3>
+            </div>
+            <div className="col-sm-12">
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                style={{ borderRadius: "10px" }}
+              >
+                <img
+                  src="/static/media/googleicon.010946f4.png"
+                  style={{ width: "18px", height: "18px" }}
+                  alt=""
+                />
+                <span className="pl-3">Sign Up with Google</span>
+              </button>
+            </div>
+            <div className="col-sm-12">
               <button
                 type="button"
                 class="btn btn-outline-dark"
@@ -51,7 +53,7 @@ function SignUp({ setCreateAccount }) {
                 <span className="pl-3 pt-1"> Sign Up with Email</span>
               </button>
             </div>
-            <div className="col-12 mt-4 mb-4">
+            <div className="col-sm-12">
               <h4>
                 Already have an account?
                 <span
