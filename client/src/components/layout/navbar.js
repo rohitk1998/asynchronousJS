@@ -32,7 +32,7 @@ const history=useHistory()
             
             <div>
              
-                <Modal buttonName='Sign In' title={'Welcome Back'}/>
+                <Modal buttonName='Sign In'/>
            
             </div>
             <div>

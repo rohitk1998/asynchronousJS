@@ -1,4 +1,4 @@
-import TrendingBlogCard from "../common/trendingblogs";
+import TrendingBlogCard from "../common/TrendingBlogCard";
 
 
 const TrendingTopices = ({ data }) => {
