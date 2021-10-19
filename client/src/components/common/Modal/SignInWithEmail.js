@@ -26,7 +26,7 @@ function SignInWithEmail({
             <strong>{title}</strong>
           </h2>
         </div>
-        <div className="col-12">
+        <div className="col-12" style={{color:'darkgrey'}}>
           <h5>
             {text0}
             <br />
@@ -89,7 +89,7 @@ function SignInWithEmail({
                 d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
               />
             </svg>
-            <span style={{ paddingLeft: "5px" }}>All sign in options</span>
+            <p className="text-success">All sign in options</p>
           </p>
         </div>
       </div>
