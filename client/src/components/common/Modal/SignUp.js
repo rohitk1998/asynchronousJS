@@ -4,7 +4,7 @@ function SignUp({ setCreateAccount }) {
   const [emailActive, setEmailActive] = React.useState(false);
 
   return (
-    <div className="container-fluid mt-4 d-flex flex-column text-center">
+    <div className="modal-body container-fluid h-100 w-100 d-flex flex-column align-items-center justify-content-center text-center">
       {emailActive ? (
         <SignInWithEmail
           activeSignUp={emailActive}
@@ -15,16 +15,14 @@ function SignUp({ setCreateAccount }) {
         />
       ) : (
         <>
-          <div className="row p-2">
-            <div className="col-12">
-              <h3>Join AsyncJS.</h3>
-            </div>
+          <div className="row">
             <div className="col-sm-12">
-              <button
-                type="button"
-                class="btn btn-outline-dark"
-                style={{ borderRadius: "10px" }}
-              >
+              <h2>
+                <strong>Join AsynchronousJS</strong>
+              </h2>
+            </div>
+            <div className="col-sm-12 mt-5">
+              <button type="button" class="btn signin-google-btn">
                 <img
                   src="/static/media/googleicon.010946f4.png"
                   style={{ width: "18px", height: "18px" }}
@@ -33,11 +31,10 @@ function SignUp({ setCreateAccount }) {
                 <span className="pl-3">Sign Up with Google</span>
               </button>
             </div>
-            <div className="col-sm-12">
+            <div className="col-sm-12 mt-3 mb-4">
               <button
                 type="button"
-                class="btn btn-outline-dark"
-                style={{ borderRadius: "10px" }}
+                class="btn signin-email-btn"
                 onClick={() => setEmailActive(true)}
               >
                 <svg
@@ -54,17 +51,21 @@ function SignUp({ setCreateAccount }) {
               </button>
             </div>
             <div className="col-sm-12">
-              <h4>
+              <p>
                 Already have an account?
                 <span
-                  style={{ color: "green", cursor: "pointer" }}
+                  style={{
+                    color: "green",
+                    cursor: "pointer",
+                    marginLeft: "5px",
+                  }}
                   onClick={() =>
                     setCreateAccount((prevDisplay) => !prevDisplay)
                   }
                 >
-                  Sign in
+                  Sign In
                 </span>
-              </h4>
+              </p>
             </div>
           </div>
         </>
