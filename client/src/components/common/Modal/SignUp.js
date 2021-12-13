@@ -9,7 +9,7 @@ function SignUp({ setCreateAccount }) {
         <SignInWithEmail
           activeSignUp={emailActive}
           setActiveSignUp={setEmailActive}
-          title="Sign up with email"
+          title="Sign Up With Email"
           text0="Enter your email address to create an"
           text1="account"
         />

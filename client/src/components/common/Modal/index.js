@@ -56,7 +56,7 @@ function Modal({ buttonName, title }) {
               <SignInWithEmail
                 active={emailActive}
                 setEmailActive={setEmailActive}
-                title="Sign in with Email"
+                title="Sign In With Email"
                 text0=" Enter the email address associated with"
                 text1="    your account, and we’ll send a magic link to"
                 text2="your inbox."

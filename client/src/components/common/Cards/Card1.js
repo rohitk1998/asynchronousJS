@@ -2,9 +2,10 @@ import React from "react";
 
 function Card1() {
   return (
-    <div className="container-fluid text-center">
-      <div className="col-12 mt-3">
-        <h4 style={{fontWeight:'600'}}>In Software, When an Engineer Exits the Team</h4>
+    <div className="container-fluid text-center"> 
+     <div className="row">
+       <div className="col-sm-12">
+        <h2 style={{fontWeight:'600'}}>In Software, When an Engineer Exits the Team</h2>
         <p style={{ color: "gray", fontSize: "18px" }}>
           My perspective when a team member gives their notice
         </p>
@@ -37,11 +38,12 @@ function Card1() {
           </div>
         </div>
       </div>
-      <div className="body ">
-        <div className="col-12 mt-2">
-          <img
+      <div className="body">
+      
+        <div className="col-12 mt-2 text-start">
+        <img
             src="https://miro.medium.com/max/700/1*FMNhW_BX4aus76enkDi9bg.jpeg"
-            style={{ width: "650px", height: "450px" }}
+            style={{ width: "50%", height: "50%" ,objectFit:'cover'}}
             alt=""
           />
           <div className='container' style={{width:'90%'}} >
@@ -86,6 +88,7 @@ function Card1() {
         </div>
         </div>
       </div>
+     </div>
     </div>
   );
 }

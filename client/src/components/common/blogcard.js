@@ -4,7 +4,7 @@ export const BlogCard = ({blogdata}) => {
       <div className="row">
         <div className="col-sm-12 col-lg-4 d-flex align-items-center justify-content-center">
           <img
-            src={blogdata.blog_thumbnail}
+            src={"https://images.unsplash.com/photo-1638225514957-12eb81bf8a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"}
             className="blog-card-thumbnail"
             alt=""
           />
