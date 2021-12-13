@@ -1,7 +1,8 @@
 import TrendingBlogCard from "../common/TrendingBlogCard";
-
+import { useHistory } from "../../Common/files";
 
 const TrendingTopices = ({ data }) => {
+  const history = useHistory()
   return (
     <>
       <div className="container-fluid w-100 landing-age-trending-topcies">
@@ -15,7 +16,7 @@ const TrendingTopices = ({ data }) => {
           {data.length !== 0
             ? data.map((blog, index) => {
                 return (
-                  <div key={index} className="col-lg-3 col-sm-6 mt-4 mb-4">
+                  <div key={index} className="col-lg-3 col-sm-6 mt-4 mb-4" onClick={()=> history.push('/next')}>
                     <TrendingBlogCard blogdata={blog} />
                   </div>
                 );
