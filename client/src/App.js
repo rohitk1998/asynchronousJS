@@ -8,8 +8,6 @@ function App() {
 
   // storage.removeItem("persist:root");
 
-  console.log('sss')
-
   return (
     <>
      <Route path="/login" exact={true} component={SingIn} />

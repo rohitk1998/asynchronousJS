@@ -9,9 +9,6 @@ export const getAsyncResponse = (
   headers
 ) => {  
 return new Promise((resolve,reject)=>{
-
-  console.log("s")
-    
   return asyncFetch(method , url , params , body , headers )
     .then((res) => asyncResponseHandler(res , resolve))
     .catch((error) => errorHandler(error , reject))
@@ -22,19 +19,16 @@ return new Promise((resolve,reject)=>{
 async function asyncFetch(method , url , params , body = null , headers = { "Content-type": "application/json; charset=UTF-8" }){
      
      if(method !== '' && params !== '') {
-       console.log(method , params , url , body , headers )
           return await axios[method](url + params  , {headers} , {body})     
      }
 }
 
 
 function asyncResponseHandler(res , resolve){
-  console.log("res" , res)
   return resolve(res)
 }
 
 function errorHandler(error , reject){
-     console.log(error)
      if(!error){
        console.log("no error")
      }

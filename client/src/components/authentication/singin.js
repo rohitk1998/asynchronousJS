@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 const SingIn = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data,e)=>{
-   console.log(data)
    e.target.reset()
   };
   return (

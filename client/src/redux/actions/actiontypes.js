@@ -5,4 +5,6 @@ export const userTypes = {
 export const blogTypes = {
   FETCH_POSTS: "FETCH_POSTS",
   ALL_POSTS: "ALL_POSTS",
+  GET_POST_BY_POST_ID:"GET_POST_BY_POST_ID",
+  SAVE_POST_DETAILS:"SAVE_POST_DETAILS"
 };

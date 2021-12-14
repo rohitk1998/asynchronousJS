@@ -13,7 +13,7 @@ const MenuBar = (props) => {
 
 
   useEffect(()=>{
-    console.log("state" , state)
+    // console.log("state" , state)
 },[state])
 
   return (

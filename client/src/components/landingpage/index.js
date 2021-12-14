@@ -15,7 +15,7 @@ const Landingpage = () => {
   }, []);
 
   useEffect(()=>{
-  console.log(all_blogs)
+  // console.log(all_blogs)
   },[all_blogs])
 
   const data = all_blogs;
