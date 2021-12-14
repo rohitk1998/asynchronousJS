@@ -15,9 +15,15 @@ const singupAction = (payload) => {
   };
 
   const getlatestblogaction = (payload)=> {
-    console.log("action call")
       return{
           type : blogTypes.FETCH_POSTS,
+          payload
+      }
+  }
+
+  const getPostDataByPostID = (payload)=> {
+      return{
+          type : blogTypes.GET_POST_BY_POST_ID,
           payload
       }
   }
@@ -26,6 +32,7 @@ const singupAction = (payload) => {
 
     menuAction,
     singupAction , 
-    getlatestblogaction
+    getlatestblogaction,
+    getPostDataByPostID
   }
   

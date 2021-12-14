@@ -1,9 +1,10 @@
 import { Redirect } from "react-router-dom";
 import Layout from "../components/layout/layout";
 import Home from "../pages/landingpage"
-import Next from '../pages/NextPage'
+import TrendingBlogDetails from '../pages/TrendingBlogDetails'
 import NothingFoundError from "../components/common/ErrorPages/404page"
 import EmptyLayout from "../components/layout/emptylayout"
+
 export const homeRoute = [
 
     {
@@ -13,9 +14,9 @@ export const homeRoute = [
         component: Home,
     },
       {
-          path:'/next',
+          path:'/trending',
           layout:Layout,
-          component:Next
+          component:TrendingBlogDetails
       },
       {
           path:'/404',

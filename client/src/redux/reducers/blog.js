@@ -4,7 +4,8 @@ import { blogTypes } from "../actions/actiontypes"
 
 const initialState = {
 
-    latestblogs : ""
+    latestblogs : "",
+    post_details : ""
 }
 
 
@@ -16,6 +17,11 @@ export function blog(state = initialState , action){
         return{
             ...state , 
             latestblogs : action.payload
+        }
+        case blogTypes.SAVE_POST_DETAILS : 
+        return{
+            ...state , 
+            post_details : action.payload
         }
         default : 
         return state ; 

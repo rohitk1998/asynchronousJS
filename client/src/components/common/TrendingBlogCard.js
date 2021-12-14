@@ -5,7 +5,6 @@
 
 
 const TrendingBlogCard = ({blogdata})=> {
-  console.log("blogdata" , blogdata );
     return (
         <div className="trending-blog-card">
             <div className="row">

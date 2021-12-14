@@ -12,8 +12,8 @@ function SignInWithEmail({
   const [signInData, setSignInData] = useState("");
   const [signUpData, setSignUpData] = useState("");
   const handleSubmit = () => {
-    console.log("sign up", signUpData);
-    console.log("signIn", signInData);
+    // console.log("sign up", signUpData);
+    // console.log("signIn", signInData);
   };
   useEffect(()=>{
    document.getElementById('email-input').focus()

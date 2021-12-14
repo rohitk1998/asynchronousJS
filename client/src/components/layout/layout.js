@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   const showmenu = useSelector((state)=> state.user.menustate )
 
   useEffect(()=>{
-   console.log(showmenu)
+  //  console.log(showmenu)
   },[showmenu])
 
   return (

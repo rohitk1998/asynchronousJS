@@ -14,7 +14,7 @@ function Navbar(props) {
   const state = useSelector((state)=> state )
 
   useEffect(()=>{
-console.log(state)
+// console.log(state)
   },[state])
 
 const history=useHistory()
