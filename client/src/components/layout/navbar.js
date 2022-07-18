@@ -21,7 +21,7 @@ const history=useHistory()
   return (
     <>
     
-      <div class="container-fluid p-3 async-navbar">
+      <div className="container-fluid p-3 async-navbar">
         <div className="row">
           <div className="col-sm-4 d-flex justify-content-center">
             <h3 onClick={() =>{history.push('/')}} style={{cursor:'pointer'}}><strong>asynchronousJS</strong></h3>
@@ -38,7 +38,7 @@ const history=useHistory()
             <div>
               <button
                 type="button"
-                class="btn"
+                className="btn"
                 data-toggle="modal"
                 data-target="#menubarModal"
                 onClick={() => disptach(menuAction())}

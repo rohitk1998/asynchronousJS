@@ -11,6 +11,7 @@ import { blogTypes } from "../actions/actiontypes";
 
 
 function* getLatestBlogs(action){
+  console.log("saga get lastest blocks");
   try{
     const response =   yield call(userService.getAllBlogLatest , action.payload , null )
       yield put({type : blogTypes.ALL_POSTS , payload : response.data } )

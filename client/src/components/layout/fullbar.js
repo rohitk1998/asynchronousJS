@@ -19,7 +19,7 @@ const MenuBar = (props) => {
   return (
     <>
       <div className="menu-icon">
-        <div class="container-fluid p-3">
+        <div className="container-fluid p-3">
           <div className="row">
             <div className="col-sm-2 d-flex justify-content-center"></div>
             <div className="col-sm-8"></div>
@@ -27,7 +27,7 @@ const MenuBar = (props) => {
               <div>
                 <button
                   type="button"
-                  class="btn"
+                  className="btn"
                   data-toggle="modal"
                   data-target="#menubarModal"
                   onClick={() => disptach({type : userTypes.SHOW_HIDE_MENU })}

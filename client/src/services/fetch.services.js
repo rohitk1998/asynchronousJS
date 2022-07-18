@@ -4,22 +4,29 @@ import axios from "axios";
 export const getAsyncResponse = (
   method,
   url,
-  params,
+  endpoint,
   body,
   headers
 ) => {  
+  console.log(
+    method,
+    url,
+    endpoint,
+    body,
+    headers
+  );
 return new Promise((resolve,reject)=>{
-  return asyncFetch(method , url , params , body , headers )
+  return asyncFetch(method , url , endpoint , body , headers )
     .then((res) => asyncResponseHandler(res , resolve))
     .catch((error) => errorHandler(error , reject))
 })
 
 };
 
-async function asyncFetch(method , url , params , body = null , headers = { "Content-type": "application/json; charset=UTF-8" }){
+async function asyncFetch(method , url , endpoint , body = null , headers = { "Content-type": "application/json; charset=UTF-8" }){
      
-     if(method !== '' && params !== '') {
-          return await axios[method](url + params  , {headers} , {body})     
+     if(method !== '' && endpoint !== '') {
+          return await axios[method](url + endpoint, body , {headers})     
      }
 }
 

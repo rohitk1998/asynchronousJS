@@ -16,9 +16,9 @@ const TrendingBlogCard = ({blogdata})=> {
             </div>
       <div className="row">
         <div className="col-sm-12 col-lg-12 mt-1">
-          <div className="container-fluid d-flex flex-nowrap align-items-center justify-content-start mt-3">
+          {/* <div className="container-fluid d-flex flex-nowrap align-items-center justify-content-start mt-3">
             <img
-              class="user-avatar"
+              className="user-avatar"
               src="https://images.unsplash.com/photo-1621609764095-b32bbe35cf3a?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             />
 
@@ -28,7 +28,7 @@ const TrendingBlogCard = ({blogdata})=> {
             </h6>
 
             <h6 className="h6 p-2 text-muted"> 29 September 2021</h6>
-          </div>
+          </div> */}
 
           <div className="container-fluid d-block flex-column flex-nowrap align-items-start  justify-content-start flex-grow-1 mt-3">
             <h5 className="display-8 text-right text-truncate">

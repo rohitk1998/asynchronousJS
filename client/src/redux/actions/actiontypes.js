@@ -8,3 +8,9 @@ export const blogTypes = {
   GET_POST_BY_POST_ID:"GET_POST_BY_POST_ID",
   SAVE_POST_DETAILS:"SAVE_POST_DETAILS"
 };
+
+
+export const authTypes = {
+    REGISTER_USER : "REGISTER_USER",
+    SAVE_USER : "SAVE_USER"
+}

@@ -8,17 +8,13 @@ import { getlatestblogaction } from "../../redux/actions/useraction";
 const Landingpage = () => {
 
   const disptach = useDispatch();
-  const all_blogs = useSelector((state)=> state.blogs.latestblogs)
+  const all_blogs = useSelector((state)=> state?.blogs?.latestblogs)
 
   useEffect(() => {
     disptach(getlatestblogaction());
   }, []);
 
-  useEffect(()=>{
-  // console.log(all_blogs)
-  },[all_blogs])
-
-  const data = all_blogs;
+  const data = [];
 
   return (
     <>

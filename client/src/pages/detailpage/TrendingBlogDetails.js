@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogDetailView from '../components/BlogDetailsView/BlogDetailsView'
+import BlogDetailView from '../../components/BlogDetailsView/BlogDetailsView'
 function TrendingBlogDetails() {
   return (
     <div>
