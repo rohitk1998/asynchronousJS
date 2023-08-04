@@ -1,30 +1,28 @@
-import React , { useEffect } from "react";
+import React from "react";
 import Navbar from "./navbar";
 import MenuBar from "./fullbar";
-import { useDispatch , useSelector } from "react-redux"
+import { useSelector } from "react-redux";
 import AppFooter from "./footer";
-
+import SideBar from "./sidebar";
 
 const Layout = ({ children }) => {
-
-
-  const showmenu = useSelector((state)=> state.user.menustate )
-
-  useEffect(()=>{
-  //  console.log(showmenu)
-  },[showmenu])
-
+  const showmenu = useSelector((state) => state.user.menustate);
   return (
     <>
       {showmenu ? (
         <div>
-          <MenuBar/>
+          <MenuBar />
         </div>
       ) : (
         <div>
-          <Navbar/>
+          <Navbar />
+          <div className="app-main-content">
+          <SideBar/>
+          <div className="main-content">
           {children}
-          <AppFooter/>
+          </div>
+          </div>
+           <AppFooter/>
         </div>
       )}
     </>

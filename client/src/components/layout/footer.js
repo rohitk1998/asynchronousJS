@@ -5,7 +5,12 @@ import hearticon from "../../assests/icons/hearticon.png";
 const AppFooter = () => {
   return (
     <div className="app-footer">
-      @Copyright of AsynchrounousJS 2022
+      <div>
+        <h3>Strongest Bond</h3>
+      </div>
+      <div>
+        <p>@Copyright strongest bond</p>
+      </div>
     </div>
   );
 };
