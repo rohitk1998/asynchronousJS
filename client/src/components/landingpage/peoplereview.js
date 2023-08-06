@@ -25,14 +25,16 @@ const reviewData = [
 
 export default function Reviews() {
   return (
-    <div className="review-section p-0 container-fluid">
+    <div className="review-section p-0 m-0 container-fluid">
       <div className="review-section-card-container row">
         {reviewData.map((item) => {
           return (
-            <div className="review-section-card mt-4">
-              <img className="card-img" src={item.image} width={100} height={100} />
+            <div className="col-lg-3 p-2 m-2">
+            <div className="review-section-card">
+            <img className="card-img" src={item.image} width={100} height={100} />
               <p className="card-text">{item.tellings}</p>
               <h6 className="card-experience">{item.experience}</h6>
+            </div>
             </div>
           );
         })}

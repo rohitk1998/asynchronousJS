@@ -3,6 +3,7 @@ import "../../App.css";
 export default function ContactForm() {
   return (
     <div className="contact-form container-fluid p-0">
+      <div className="contact-form-menu">
       <div className="opening-hours">
         <h3 className="contact-menu-title">Opening Hours</h3>
         <ul>
@@ -24,6 +25,7 @@ export default function ContactForm() {
         <h3 className="contact-menu-title">Contact</h3>
         <h6>Sunny Enclave , 106 Mohali , 140301 Punjab</h6>
         <p>Phone no : 2393-2922-40</p>
+      </div>
       </div>
     </div>
   );
